@@ -7,7 +7,7 @@ See the **[XL Release Documentation](https://docs.xebialabs.com/xl-release/index
 # Overview #
 
 The xlr-xld-advanced-plugin is a XL Release plugin that allows you to perform slightly more advanced tasks on XL Deploy. 
-It depends on the xlr-xldeploy-plugin - so make sure you have that installed already. 
+It depends on the xlr-xldeploy-plugin - so make sure you have that installed already. You can find this in the **[Xebia Labs Community](https://github.com/xebialabs-community/xlr-xldeploy-plugin)**
 This plugin was created to ensure that the community plugin was not polluted, whilst retaining the ability to perform these extra functions. 
 
 ## Installation ##
