@@ -52,12 +52,7 @@
         <property name="scriptLocation" default="xlr_xldeploy/renameCITask.py" hidden="true" />
         <property name="ciID" category="input" label="CI ID" required="true"/>
         <property name="newName" category="input" kind="string" label="New Name" required="true" description="The new CI Name"/>
-        <property name="return_type" category="input" kind="enum" label="Return Type" hidden="true" default="json" required="true" description="Return type of response">
-        <enum-values>
-                <value>json</value>
-                <value>xml</value>
-            </enum-values>
-        </property>
+        <property name="return_type" category="input" kind="string" label="Return Type" hidden="true" default="json" required="true" description="Return type of response"/>
     </type>
 
     <type type="xldeploy.addRemoveMemberTask" extends="xldeploy.Task" label="XL Deploy: Add/Remove Member" description="Add or Remove a Member from an Environment">

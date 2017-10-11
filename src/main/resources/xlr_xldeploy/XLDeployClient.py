@@ -516,3 +516,11 @@ class XLDeployClient(object):
             if package not in current_packages:
                 to_add.append(package)
         return to_add,to_remove
+    
+    def rename_ci(self, ci_id, new_ci_id, content_type = "json"):
+        update_ci = "/deployit/repository/rename/%s?newName=%s" % (ci_id,new_ci_id)
+        content_type_header = "application/%s" % content_type
+        response = self.http_request.post(update_ci, '', contentType=content_type_header)
+        check_response(response, "Failed to rename ci [%s]. Server return [%s], with content [%s]" % (
+            new_ci_id, response.status, response.response))
+
